@@ -135,7 +135,7 @@ const MarqueeText = (props: MarqueeTextProps, ref: Ref<MarqueeTextHandles>): JSX
       setIsAnimating(false);
       onMarqueeComplete?.();
     });
-  }, [onMarqueeComplete]);
+  }, []);
 
   useImperativeHandle(ref, () => {
     return {
